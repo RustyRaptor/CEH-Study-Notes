@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-08-05 Tue 03:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CEH Self Assessment Report</title>
+<meta name="description" content="Assessment of current CEH Knowlege based on book assessment on online official self-assessment" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CEH Self Assessment Report</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf0a0836">1. Book Assessment Test 1</a>
+<ul>
+<li><a href="#org840c161">1.1. Assessment blind answers.</a></li>
+<li><a href="#org7ef1b22">1.2. Scorin</a>
+<ul>
+<li><a href="#org0dd93d5">1.2.1. Correctness (did I get the answer right)</a></li>
+<li><a href="#orgf9813dc">1.2.2. TODO: Do something</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf0a0836" class="outline-2">
+<h2 id="orgf0a0836"><span class="section-number-2">1.</span> Book Assessment Test 1</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org840c161" class="outline-3">
+<h3 id="org840c161"><span class="section-number-3">1.1.</span> Assessment blind answers.</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<a href="#orgf9813dc">1.2.2</a>
+</p>
+
+<ol class="org-ol">
+<li>B, the IP ID is an arbitrary integer that is incremented for each packet. This is how the source and destination keep track of the order of packets to recombine them at the end.</li>
+<li>C, SQL Injection tries to trick the server into executing SQL code by appending it somewhere. The "OR 1=1" is a common string used for SQL injection because it can be appended to almost anything and return true in SQL.</li>
+<li>Could be A, B, C, or D.
+<ul class="org-ul">
+<li>A would be unlikely due to the rigorous verification process of the stores. But sometimes you can find a way.</li>
+<li>B could certainly be an attack path, if you can get a victim to insert an SD card or USB stick, convince them to run an APK file or something else.</li>
+<li>C could also be used, there are third party app stores such as F-droid, you could create an insecure app store as long as you can convince the user to trust and install it.</li>
+<li>D jailbreaking is a common practice, you could disguise the malware as a jailbreaking tool or state that it requires the user's device to be rooted in order to use it. A rooted device can do so much more than an OEM device.</li>
+</ul></li>
+<li>B, the ARP protocol is used to maintain a table of IP addresses (unsure)</li>
+<li>C, a buffer overflow is when a program writes into memory beyond the allocated buffer which can impact the values of other variables and thus other functions of the app insecurely.</li>
+<li>No idea, I understand the fundamental concept here but I do not know how they map to ip ranges.</li>
+<li>D, I don't actually know, but based on the etymology here I am making a guess. Needs to be studied</li>
+<li>A, this makes most intuitive sense to me. C doesn't make sense, if probability is higher it should increase risk not decrease.</li>
+<li>B, This is just an intuitive guess based on word meaning. I'm not sure what a four-way handshake is. Worth studying.</li>
+<li>D, Stateful firewalls, iirc will actively inspect packets before they reach the endpoints to find malware signatures. Worth reviewing even if right.</li>
+<li>D, The other answers can be true sometimes but this is the primary purpose afaik. When configuring new applications we make sure they are aligned with our policies.</li>
+<li>B, this looks like URL encoding because it uses url codes with percent characters.</li>
+<li>B, dig is a DNS tracing tool, we can specify a Name Server record (ns) before or after the domain. Its worth learning the fundamental DNS record types.</li>
+<li>A, I believe a DNS Query is sufficient to get this information, may need specific record types. However it is worth learning what a zone transfer is.</li>
+<li>C, this is just an intuitive guess, this is a topic worth looking into.</li>
+<li>D, The only one im uncertain of is if this is considered light on network traffic. You do need to ping a lot of addresses sometimes in a short period of time. But otherwise yeah, pings are very commonly allowed and they don't need a port scan. The downside is that plenty of places like to ignore pings (ICMP)</li>
+<li>No idea, time to read up.</li>
+<li>B, it's common for secure systems to either not have python installed unless absolutely necessary, or they will only allow a specific user to run the python interpreter. A could also be true in some cases.</li>
+<li>B, I don't remember the exact syntax, but I believe you can specify source and destination, host would include both.</li>
+<li>No clue, need to read on this.</li>
+<li>D, although imitation sounds right, I don't remember it being a core principle of social engineering, authority refers to the authority that a help desk demands which induces trust in the victim.</li>
+<li>No clue, need to read up</li>
+<li>No clue, need to read up</li>
+<li>C, just an intuitive guess, needs review</li>
+<li>D, i kind of know this, and all the other ones are bullshit lmao</li>
+<li>C, this is an intuitive guess, privilege escalation would be something you need to exploit the local system for. Which would lead to the others in this list. However, its worth reviewing what they really mean by "local" vulnerability.</li>
+<li>D, authority is using an "authority" to determine if someone is who they say they are. However this is a bit fuzzy for me. Worth reviewing.</li>
+<li>D, tailgating is closely following an authorized person to get through a door, man-traps are those rotating contraptions that make sure only one person can enter at a time.</li>
+<li>A, I have no idea what each of these are other than they are bluetooth attacks. I assume "snarfing" is listening while "jacking" is sending something. So guessing A, but need to review these.</li>
+<li>No idea, gotta look up Biba</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7ef1b22" class="outline-3">
+<h3 id="org7ef1b22"><span class="section-number-3">1.2.</span> Scorin</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org0dd93d5" class="outline-4">
+<h4 id="org0dd93d5"><span class="section-number-4">1.2.1.</span> Correctness (did I get the answer right)</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">#</th>
+<th scope="col" class="org-right">Correctness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">17</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">18</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">19</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">21</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">22</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">23</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">24</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">25</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">26</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">27</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">28</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">29</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgf9813dc" class="outline-4">
+<h4 id="orgf9813dc"><span class="section-number-4">1.2.2.</span> TODO: Do something</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"WHAT"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">sus</span><span style="color: #4f97d7;">(</span>huh<span style="color: #4f97d7;">)</span>:
+    <span style="color: #4f97d7; font-weight: bold;">return</span> huh**<span style="color: #a45bad;">2</span>
+<span style="color: #4f97d7; font-weight: bold;">return</span> sus<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">2</span>+<span style="color: #a45bad;">2</span>+<span style="color: #a45bad;">2</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">fact</span><span style="color: #4f97d7;">(</span>n<span style="color: #4f97d7;">)</span>:
+    <span style="color: #4f97d7; font-weight: bold;">return</span> n**<span style="color: #a45bad;">2</span>
+fact<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">2</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span>fact<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">2</span><span style="color: #bc6ec5;">)</span>, <span style="color: #2d9574;">"HUH"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7; font-weight: bold;">return</span> fact<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">2</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"wow"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">"wow"</span>
+</pre>
+</div>
+
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">foo</span><span style="color: #4f97d7;">(</span>x<span style="color: #4f97d7;">)</span>:
+  <span style="color: #4f97d7; font-weight: bold;">if</span> x&gt;<span style="color: #a45bad;">0</span>:
+    <span style="color: #4f97d7; font-weight: bold;">return</span> x+<span style="color: #a45bad;">1</span>
+
+  <span style="color: #4f97d7; font-weight: bold;">else</span>:
+    <span style="color: #4f97d7; font-weight: bold;">return</span> x-<span style="color: #a45bad;">1</span>
+
+<span style="color: #4f97d7; font-weight: bold;">return</span> foo<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">5</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+
+
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #4f97d7; font-weight: bold;">import</span> random
+<span style="color: #4f97d7; font-weight: bold;">if</span> random.randint<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">0</span>,<span style="color: #a45bad;">10</span><span style="color: #4f97d7;">)</span> % <span style="color: #a45bad;">2</span> == <span style="color: #a45bad;">0</span>:
+    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">"even"</span>
+<span style="color: #4f97d7; font-weight: bold;">else</span>:
+    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">"odd"</span>
+</pre>
+</div>
+
+
+
+<p>
+<a href="https://www.youtube.com/watch?v=SzA2YODtgK4">Link to a cool video on org-mode</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2025-08-05 Tue 03:06</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
