@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       7402cf7d-da2d-455f-9a0a-7f422c81b5a9
+:END:
+
+* CEH Study Outline
+
+** Self Assessment
+
+- Complete the self assessment EC-Council Provides at https://www.eccouncil.org/train-certify/ceh-assessment/
+- Complete the assessment in the book on page xxv
+- take notes on which topics should be studied and focused on
