@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-05 Tue 03:06 -->
+<!-- 2025-08-05 Tue 20:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CEH Self Assessment Report</title>
@@ -193,6 +193,38 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -201,31 +233,35 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf0a0836">1. Book Assessment Test 1</a>
+<li><a href="#org4330080">1. Book Assessment Test 1</a>
 <ul>
-<li><a href="#org840c161">1.1. Assessment blind answers.</a></li>
-<li><a href="#org7ef1b22">1.2. Scorin</a>
+<li><a href="#orgae7dbbb">1.1. Assessment blind answers.</a></li>
+<li><a href="#org32d0ef7">1.2. Scorin</a>
 <ul>
-<li><a href="#org0dd93d5">1.2.1. Correctness (did I get the answer right)</a></li>
-<li><a href="#orgf9813dc">1.2.2. TODO: Do something</a></li>
+<li><a href="#org7e084eb">1.2.1. Correctness (did I get the answer right)</a></li>
+<li><a href="#orga5a736b">1.2.2. <span class="todo TODO">TODO</span> Do something</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#orge900974">2. Online Official CEH Assessment Test</a>
+<ul>
+<li><a href="#orgb382473">2.1. Scoring</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf0a0836" class="outline-2">
-<h2 id="orgf0a0836"><span class="section-number-2">1.</span> Book Assessment Test 1</h2>
+<div id="outline-container-org4330080" class="outline-2">
+<h2 id="org4330080"><span class="section-number-2">1.</span> Book Assessment Test 1</h2>
 <div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-org840c161" class="outline-3">
-<h3 id="org840c161"><span class="section-number-3">1.1.</span> Assessment blind answers.</h3>
-<div class="outline-text-3" id="text-1-1">
 <p>
-<a href="#orgf9813dc">1.2.2</a>
+:ID: book<sub>assessment</sub><sub>test</sub>
 </p>
-
+</div>
+<div id="outline-container-orgae7dbbb" class="outline-3">
+<h3 id="orgae7dbbb"><span class="section-number-3">1.1.</span> Assessment blind answers.</h3>
+<div class="outline-text-3" id="text-1-1">
 <ol class="org-ol">
 <li>B, the IP ID is an arbitrary integer that is incremented for each packet. This is how the source and destination keep track of the order of packets to recombine them at the end.</li>
 <li>C, SQL Injection tries to trick the server into executing SQL code by appending it somewhere. The "OR 1=1" is a common string used for SQL injection because it can be appended to almost anything and return true in SQL.</li>
@@ -266,14 +302,14 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org7ef1b22" class="outline-3">
-<h3 id="org7ef1b22"><span class="section-number-3">1.2.</span> Scorin</h3>
+<div id="outline-container-org32d0ef7" class="outline-3">
+<h3 id="org32d0ef7"><span class="section-number-3">1.2.</span> Scorin</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org0dd93d5" class="outline-4">
-<h4 id="org0dd93d5"><span class="section-number-4">1.2.1.</span> Correctness (did I get the answer right)</h4>
+<div id="outline-container-org7e084eb" class="outline-4">
+<h4 id="org7e084eb"><span class="section-number-4">1.2.1.</span> Correctness (did I get the answer right)</h4>
 <div class="outline-text-4" id="text-1-2-1">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org31117b6" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -309,7 +345,7 @@
 </tr>
 
 <tr>
-<td class="org-right">5</td>
+<td class="org-right">i</td>
 <td class="org-right">1</td>
 </tr>
 
@@ -441,71 +477,592 @@
 </table>
 </div>
 </div>
-<div id="outline-container-orgf9813dc" class="outline-4">
-<h4 id="orgf9813dc"><span class="section-number-4">1.2.2.</span> TODO: Do something</h4>
+<div id="outline-container-orga5a736b" class="outline-4">
+<h4 id="orga5a736b"><span class="section-number-4">1.2.2.</span> <span class="todo TODO">TODO</span> Do something</h4>
 <div class="outline-text-4" id="text-1-2-2">
-<div class="org-src-container">
-<pre class="src src-python"><span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"WHAT"</span><span style="color: #4f97d7;">)</span>
-<span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">sus</span><span style="color: #4f97d7;">(</span>huh<span style="color: #4f97d7;">)</span>:
-    <span style="color: #4f97d7; font-weight: bold;">return</span> huh**<span style="color: #a45bad;">2</span>
-<span style="color: #4f97d7; font-weight: bold;">return</span> sus<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">2</span>+<span style="color: #a45bad;">2</span>+<span style="color: #a45bad;">2</span><span style="color: #4f97d7;">)</span>
-</pre>
-</div>
-
-
-<div class="org-src-container">
-<pre class="src src-python"><span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">fact</span><span style="color: #4f97d7;">(</span>n<span style="color: #4f97d7;">)</span>:
-    <span style="color: #4f97d7; font-weight: bold;">return</span> n**<span style="color: #a45bad;">2</span>
-fact<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">2</span><span style="color: #4f97d7;">)</span>
-<span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span>fact<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">2</span><span style="color: #bc6ec5;">)</span>, <span style="color: #2d9574;">"HUH"</span><span style="color: #4f97d7;">)</span>
-<span style="color: #4f97d7; font-weight: bold;">return</span> fact<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">2</span><span style="color: #4f97d7;">)</span>
-</pre>
-</div>
-
-
-<div class="org-src-container">
-<pre class="src src-python"><span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"wow"</span><span style="color: #4f97d7;">)</span>
-<span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">"wow"</span>
-</pre>
-</div>
-
-
-<div class="org-src-container">
-<pre class="src src-python"><span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">foo</span><span style="color: #4f97d7;">(</span>x<span style="color: #4f97d7;">)</span>:
-  <span style="color: #4f97d7; font-weight: bold;">if</span> x&gt;<span style="color: #a45bad;">0</span>:
-    <span style="color: #4f97d7; font-weight: bold;">return</span> x+<span style="color: #a45bad;">1</span>
-
-  <span style="color: #4f97d7; font-weight: bold;">else</span>:
-    <span style="color: #4f97d7; font-weight: bold;">return</span> x-<span style="color: #a45bad;">1</span>
-
-<span style="color: #4f97d7; font-weight: bold;">return</span> foo<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">5</span><span style="color: #4f97d7;">)</span>
-</pre>
-</div>
-
-
-
-
-<div class="org-src-container">
-<pre class="src src-python"><span style="color: #4f97d7; font-weight: bold;">import</span> random
-<span style="color: #4f97d7; font-weight: bold;">if</span> random.randint<span style="color: #4f97d7;">(</span><span style="color: #a45bad;">0</span>,<span style="color: #a45bad;">10</span><span style="color: #4f97d7;">)</span> % <span style="color: #a45bad;">2</span> == <span style="color: #a45bad;">0</span>:
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">"even"</span>
-<span style="color: #4f97d7; font-weight: bold;">else</span>:
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">"odd"</span>
-</pre>
-</div>
-
-
-
 <p>
-<a href="https://www.youtube.com/watch?v=SzA2YODtgK4">Link to a cool video on org-mode</a>
+DEADLINE:<span class="timestamp-wrapper"><span class="timestamp">&lt;2025-08-06 Wed&gt;</span></span>
 </p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span>data<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7;">int</span><span style="color: #4f97d7;">(</span><span style="color: #a45bad;">100</span>*<span style="color: #4f97d7;">sum</span><span style="color: #bc6ec5;">(</span>row<span style="color: #2d9574;">[</span><span style="color: #a45bad;">1</span><span style="color: #2d9574;">]</span> <span style="color: #4f97d7; font-weight: bold;">for</span> row <span style="color: #4f97d7; font-weight: bold;">in</span> data<span style="color: #bc6ec5;">)</span>/<span style="color: #4f97d7;">sum</span><span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">1</span> <span style="color: #4f97d7; font-weight: bold;">for</span> i <span style="color: #4f97d7; font-weight: bold;">in</span> data<span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
 </div>
+
+
+56
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge900974" class="outline-2">
+<h2 id="orge900974"><span class="section-number-2">2.</span> Online Official CEH Assessment Test</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>Which of the following term refers to gathering and publishing personally identifiable information such as an individualâ€™s name and email address or other sensitive information of an entire organization?Doxing</li>
+<li>To compromise or to hack a system or network, the hackers go through various phases. What is the first hacking phase that hackers perform to gather information about a target before launching an attack? 
+<ol class="org-ol">
+<li>Reconaissance</li>
+</ol></li>
+<li>An IT Firm had info on its product leaked what threat did they face?
+<ol class="org-ol">
+<li>Information Leakage</li>
+<li>Correct: Corporate Espionage</li>
+</ol></li>
+<li>Which of the following scanning technique does an attacker use to bypass firewall rules, logging mechanisms, and disguise themselves as usual network traffic?
+<ol class="org-ol">
+<li>Stealth Scanning Technique</li>
+</ol></li>
+<li>Even though IDS and firewall security controls can prevent any unauthorized network access, there are many evasion techniques used by attackers to exploit security limitations. One such technique is where the attacker changes the source IP addresses so that the attacks appear to be coming in as someone else. Identify the IDS/firewall evasion technique used by the attacker?
+<ol class="org-ol">
+<li>IP Spoofing</li>
+</ol></li>
+<li>Nmap is a free open source utility, which is designed to scan large networks rapidly. Identify the Nmap Scan method that is often referred to as a half-open scan because it does not open a full TCP connection.
+<ol class="org-ol">
+<li>Syn Stealth</li>
+<li>Needs review</li>
+</ol></li>
+<li>Enumeration is defined as the process of extracting user names, machine names, network resources, shares, and services from a system. Which of the following enumeration does an attacker use to obtain a list of computers that belong to a domain?
+<ol class="org-ol">
+<li>Netbios enumeration</li>
+<li>I believe netbios is the term which refers to the subdomains on a domain in a LAN network</li>
+<li>This definitely needs review</li>
+</ol></li>
+<li>SNMP is an application layer protocol that runs on UDP and maintains and manages routers, hubs, and switches on an IP network. Which of the following SNMP command is used by the SNMP agent to inform the pre-configured SNMP manager of a specific event?
+<ol class="org-ol">
+<li>Trap</li>
+<li>This is an intuitive answer based on how I understand event based systems. This needs review for sure.</li>
+</ol></li>
+<li>Identify the type of vulnerability assessment solutions in which the auditor selects different strategies for each machine or component of the information system?
+<ol class="org-ol">
+<li>Inference-Based Assessment</li>
+<li>An intuitive guess based on terminology, this needs review</li>
+<li>Correction: Tree-Based Assessment</li>
+</ol></li>
+<li>The attacker tries to gather a password database and split each password entry into 2- and 3-character long syllables; by using these character elements, a new alphabet is developed, which is then matched with the existing password database. Identify the active online attack mentioned in the above scenario?
+<ol class="org-ol">
+<li>Fingerprint attack</li>
+<li>Guess based on naming, i have no clue about this method.</li>
+<li>Correction: Markov-Chain Attack</li>
+</ol></li>
+<li>Identify the CPU vulnerabilities found in the design of modern processors, including chips from AMD, ARM, and Intel, caused by performance optimizations in these processors.
+<ol class="org-ol">
+<li>Spectre and Meltdown</li>
+<li>My favorites :)</li>
+</ol></li>
+<li>Rootkits are kernel programs that can hide and cover-up traces of activities. It replaces certain operating system calls and utilities with its own modified versions of those routines. Which of the following rootkit modifies the boot sequence of the machine to load themselves instead of the original virtual machine monitor or operating system?
+<ol class="org-ol">
+<li>Boot loader level rootkit</li>
+<li>Pretty sure this is right. Might be worth looking up.</li>
+<li>WRONG</li>
+<li>Correction: Hypervisor Level Rootkit
+<ol class="org-ol">
+<li>This makes sense, most modern operating systems are loaded at the hypervisor level now.</li>
+</ol></li>
+</ol></li>
+<li>Which of the following malware component is a software that protects malware from undergoing reverse engineering or analysis, and is thus hard to be detected by a security mechanism?
+<ol class="org-ol">
+<li>Obfuscator</li>
+<li>Fairly straight forward</li>
+<li>WRONG????</li>
+<li>I mean, ok wtf.</li>
+<li>Correction: Crypter???</li>
+</ol></li>
+<li>A virus is a self-replicating program that produces its own code by attaching copies of it into other executable codes. Which of the following virus evades an anti-virus software by intercepting its requests to the operating system?
+<ol class="org-ol">
+<li>Stealth/Tunneling Virus</li>
+<li>Intuitive, maybe worth studying.</li>
+</ol></li>
+<li>Sniffer turns the NIC of a system to the promiscuous mode so that it can listen to all the data transmitted on its segment. It can constantly read all information entering the computer through the NIC by decoding the information encapsulated in the data packet. Passive sniffing is one of the types of sniffing. Passive sniffing refers to:
+<ol class="org-ol">
+<li>Sniffing through a bridge</li>
+<li>Intuitive guess, needs some review but this makes sense to me conceptually</li>
+<li>WRONG</li>
+<li>Correction: Sniffing through a hub</li>
+<li>Fair enough</li>
+</ol></li>
+<li>A firewall is a set of related programs, located at a network gateway server that protects the resources of a private network from users on other networks. A firewall examines all traffic routed between the two networks to see if it meets certain criteria. Packet filter is one of the categories of a firewall. Packet filtering firewall works at which of these layers of the OSI model?
+<ol class="org-ol">
+<li>Network Layer</li>
+<li>Intuitive guess, definitely need to review and fully grasp the OSI model and understand how to answer these types of questions.</li>
+</ol></li>
+<li>Which of the following Trojans are used by attackers to destroy or change the entire content of a database and also attack the websites by physically changing the underlying HTML format?
+<ol class="org-ol">
+<li>Defacement trojan</li>
+<li>We know this one for sure, but worth reviewing what a trojan actually is in this context</li>
+</ol></li>
+<li>Address Resolution Protocol (ARP) is a protocol for mapping an IP address to a physical machine address that is recognized in the local network. ARP Spoofing involves constructing a large number of forged ARP request and reply packets to overload:
+<ol class="org-ol">
+<li>Router</li>
+<li>Intuitive guess, it makes most sense to me that the router would be the authority for ARP tables. Worth reviewing how ARP works</li>
+<li>WRONG</li>
+<li>Correction: Switch</li>
+<li>Yeah that makes more sense actually. I guess I'm so used to networks without a switch so it would be a switch built into the router doing this.</li>
+<li>Makes perfect sense</li>
+</ol></li>
+<li>You have invested millions of dollars in protecting your corporate network. You have the best IDS, firewall with strict rules, and routers with no configuration errors. Which of the following techniques practiced by an attacker to exploit human behavior and make your network vulnerable to attacks?
+<ol class="org-ol">
+<li>Social Engineering</li>
+<li>Easy, this is an awesome question</li>
+</ol></li>
+<li>Identify the social engineering technique in which an attacker tries to call numerous random numbers within a company, claiming to be from technical support and offer service to end-users in exchange for confidential data or login credentials?
+<ol class="org-ol">
+<li>Elicitation</li>
+<li>This is is pretty straight forward, I assume its right.</li>
+<li>WRONG???</li>
+<li>Correction: Quid Pro Quo</li>
+<li>It seems some aspects of the exam will be about knowing the right jargon even if there's similar words that validly describe it.</li>
+</ol></li>
+<li>Social engineering is the art of convincing people to reveal confidential information. Which of the following social engineering techniques does not fall under the category of computer-based social engineering?
+<ol class="org-ol">
+<li>Tailgating</li>
+<li>Tailgating is when you follow someone closely to get through a physical door. Must be this one.</li>
+<li>Good to review social engineering techniques</li>
+</ol></li>
+<li>Denial of Service (DoS) is an attack on a computer or network that prevents legitimate use of its resources. In a DoS attack, attackers flood a victim system with non-legitimate service requests or traffic to overload its resources, which prevents it from performing intended tasks. Which of the following is a symptom of a DoS attack?
+<ol class="org-ol">
+<li>Unavailability of a particular website.</li>
+<li>duh</li>
+</ol></li>
+<li>What port does NTP use?
+<ol class="org-ol">
+<li>UDP 123</li>
+<li>I mean, this is just something you can google search. I guess just make it a point to memorize the common ports of common services.</li>
+</ol></li>
+<li>Identify the attacks in which DDoS vulnerabilities do not have patches or effective defensive mechanisms, and until the victim identifies the threat actors attack strategy and deploys a patch for the exploited DDoS vulnerability, the attacker actively blocks all the victimÃ¢€™s resources and steals the victimÃ¢€™s data?
+<ol class="org-ol">
+<li>Zero-Day DDoS Attack</li>
+<li>I am pretty sure, weirdly specific question.</li>
+</ol></li>
+<li>In which of the following attacks does an attacker send partial HTTP requests to the target webserver to exhaust the target server\u2019s maximum concurrent connection pool, and as a result, additional connection attempts are denied?
+<ol class="org-ol">
+<li>Slowloris attack</li>
+<li>Had to look it up, but I vaguely remembered it. Worth reviewing types of attacks. Common theme here.</li>
+</ol></li>
+<li>Identify the hijacking technique in which the attacker injects the malicious data in the TCP session, even if the source-routing is disabled, and can send the data even if there is no access to see the response?
+<ol class="org-ol">
+<li>Blind highjacking</li>
+<li>Intuitive guess, no clue about these. Review types of network highjacking.</li>
+</ol></li>
+<li>An intrusion detection system (IDS) is a security software or hardware that inspects all network traffic for suspicious patterns that may indicate a network or system security breach. Identify the alert raised by an IDS when no attack has taken place?
+<ol class="org-ol">
+<li>False Positive</li>
+<li>DUHH</li>
+</ol></li>
+<li>An intrusion detection system (IDS) gathers and analyzes information from within a computer or a network to identify the possible violations of security policy, including unauthorized access and misuse. Attackers use various IDS evasion techniques to bypass intrusion detection mechanisms. Which of the following evasion techniques rely on Time-to-Live (TTL) fields of a TCP/IP packet?
+<ol class="org-ol">
+<li>Insertion Attack</li>
+<li>Intuitive guess, worth studying how this works exactly and what TTL actually does.</li>
+<li>My understanding is TTL limits the time in which a packet is respected. Meaning if we insert packets we could exploit the TTL.</li>
+<li>Study this</li>
+</ol></li>
+<li>Firewalls are categorized into two types, namely, hardware firewall and software firewall. Identify the correct statement for a software firewall.
+<ol class="org-ol">
+<li>placed between the normal application and networking components of the OS</li>
+<li>This is a tough one. Need to study firewall terminology.</li>
+</ol></li>
+<li>A honeypot is an information system resource set up to attract and trap people who attempt to penetrate an organization\u2019s network. Which of the following type of honeypots emulate the real production network of a target organization?
+<ol class="org-ol">
+<li>High-interaction honeypot</li>
+<li>Intuitive guess, this needs to be studied</li>
+</ol></li>
+<li>In which of the following IDS evasion techniques does an attacker split the attack traffic into many packets, such that no single packet triggers the IDS?
+<ol class="org-ol">
+<li>Session Splicing</li>
+<li>Intuitive name guess</li>
+</ol></li>
+<li>Metasploit Framework is an exploit development platform that supports fully automated exploitation of web servers. Which of the following Metasploit modules is used to perform arbitrary, one-off actions such as port scanning, denial of service, and fuzzing?
+<ol class="org-ol">
+<li>Metasploit Auxillary module</li>
+<li>Just an intuitive guess, should review metasploit</li>
+</ol></li>
+<li>Identify the web application attack where the attacker injects carriage return ( ) and line feed ( ) characters into the users input to trick the web server, web application, or user into believing that the current object is terminated and a new object has been initiated?
+<ol class="org-ol">
+<li>CRLF Injection</li>
+<li>iirc CRLF refers to these types of terminator characters, intuitive guess anyway.</li>
+</ol></li>
+<li>Identify the web application attack where attackers exploit webpage vulnerabilities to force an unsuspecting users browser to send malicious requests they did not intend. The victim holds an active session with a trusted site and simultaneously visits a malicious site, which injects an HTTP request for the trusted site into the victim users session, compromising its integrity.
+<ol class="org-ol">
+<li>Intuitive guess based on secondary knowlege of what this is.</li>
+</ol></li>
+<li>Jason, a penetration tester, is testing a web application that he knows is vulnerable to an SQL injection, but the results of the injection are not visible to him. He tried waitfor delay command to check the SQL execution status, which confirmed the presence of the SQL injection vulnerability. Which type of SQL injection is Jason attempting on the web application?
+<ol class="org-ol">
+<li>Blind SQL Injection</li>
+<li>Just means we are infering a vulnerability by observing server response behavior so in a sense it is blind.</li>
+</ol></li>
+<li>Identify the application security testing method where the entire system architecture, including its source code or application/software to be tested, is already known to the tester?
+<ol class="org-ol">
+<li>Static Application Security Testing</li>
+<li>Intuitive guess, pretty sure that's right. It just means they are using static analysis on the code and architecture to find vulnerabilities.</li>
+</ol></li>
+<li>SQL injection attacks use a series of malicious SQL queries or SQL statements to manipulate the database directly. In which SQL injection attack does an attacker deface a web page, insert malicious content into web pages, or alter the contents of a database?
+<ol class="org-ol">
+<li>Compromised data integrity</li>
+<li>Not sure about this one</li>
+</ol></li>
+<li>In which of the following SQL injection attacks does an attacker bypass user authentication by using a conditional OR clause in such a way that the condition of the WHERE clause will always be true?
+<ol class="org-ol">
+<li>Tautology</li>
+<li>That is such a cool name</li>
+</ol></li>
+<li>Which SQL injection testing technique is used to discover coding errors by inputting a massive amount of random data and observing the changes in the output and security loopholes in web applications?
+<ol class="org-ol">
+<li>Fuzzing Testing</li>
+<li>Not just for SQL injection. I noticed some terms apply to many different subjects</li>
+</ol></li>
+<li>Which of the following Wi-Fi chalking methods refer to drawing symbols in public places to advertise open Wi-Fi networks?
+<ol class="org-ol">
+<li>Warchalking</li>
+<li>This is similar to Wardriving where people drive around neighborhoods and create a database of wifi networks and their locations even without joining them.</li>
+</ol></li>
+<li>Which wireless standard has bandwidth up to 54 Mbps and signals in a regulated frequency spectrum around 5 GHz?
+<ol class="org-ol">
+<li>802.11b??</li>
+<li>I have no clue, I will need to study this topic heavily</li>
+<li>WRONG</li>
+<li>Correction: 802.11a</li>
+</ol></li>
+<li>Bluetooth hacking refers to the exploitation of Bluetooth stack implementation vulnerabilities to compromise sensitive data in Bluetooth-enabled devices and networks. Which of the following Bluetooth attack refers to sending unsolicited messages over Bluetooth to Bluetooth-enabled devices such as PDA and mobile phones?
+<ol class="org-ol">
+<li>Blue Snarfing</li>
+<li>No clue, similar question in the book assessment. Need to study bluetooth attacks</li>
+<li>WRONG</li>
+<li>Correction: Blue Snarfing</li>
+</ol></li>
+<li>In which of the following attack does an attacker install a virtual communication tower between the two authentic endpoints, intending to mislead the victim?
+<ol class="org-ol">
+<li>Wormhole Attack</li>
+<li>Just a silly guess, I have to study a lot on wireless attack types</li>
+<li>WRONG:</li>
+<li>Correction: aLTEr Attack</li>
+</ol></li>
+<li>IoT is a network of devices with an IP address that has the capability of sensing, collecting, and sending data using embedded sensors. Identify the layer in IoT architecture that helps to bridge the gap between two endpoints, such as a device and a client, and also carries out message routing, message identification, and subscribing?
+<ol class="org-ol">
+<li>Access Gateway Layer</li>
+<li>Just a guess, it's jargon, will read up on IOT architecture terms.</li>
+</ol></li>
+<li>Identify the IoT attack, in which an attacker uses multiple forged identities to create a strong illusion of traffic congestion, affecting communication between neighboring nodes and networks?
+<ol class="org-ol">
+<li>Side-Channel Attack?</li>
+<li>No freaking idea</li>
+</ol></li>
+<li>Which of the following cloud attacks is performed during the translation of the SOAP message in the TLS layer where attackers duplicate the body of the message and send it to the server as a legitimate user?
+<ol class="org-ol">
+<li>Wrapping attack</li>
+<li>No freaking idea, but its intuitive name</li>
+</ol></li>
+<li>Docker is open-source software that can be installed on any host to build, deploy, and run containerized applications on a single operating system Which of the following Docker native network drivers is used to create a network connection between the container interfaces and its parent host interface?
+<ol class="org-ol">
+<li>Bridge</li>
+<li>I guess depends on what we mean by "create a network connection" not sure.</li>
+<li>Good idea to review</li>
+</ol></li>
+<li>Code-breaking techniques help measure the encryption strength. Which of the following code-breaking techniques requires a high level of mathematical and cryptographic skills and involves the use of social engineering techniques to extract cryptography keys?
+<ol class="org-ol">
+<li>Frequency Analysis</li>
+<li>Yeah, that sounds a lot like frequency analysis. Worth reviewing.</li>
+</ol></li>
+<li>Identify the encryption technique where data is encrypted by a sequence of photons that have a spinning trait while traveling from one end to another end?
+<ol class="org-ol">
+<li>Quantim Cryptography</li>
+<li>Pretty sure, but I should review this. Also could be hardware-based rather.</li>
+</ol></li>
+<li>Which of the following cryptographic attack refers to the extraction of cryptographic secrets (e.g., the password to an encrypted file) from a person by coercion or torture?
+<ol class="org-ol">
+<li>Rubber Hose Attack</li>
+<li>Well I knew what it is but didn't know this is what it's called. That's pretty funny.</li>
+</ol></li>
+</ol>
+</div>
+<div id="outline-container-orgb382473" class="outline-3">
+<h3 id="orgb382473"><span class="section-number-3">2.1.</span> Scoring</h3>
+<div class="outline-text-3" id="text-2-1">
+<table id="org10c2f36" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">#</th>
+<th scope="col" class="org-right">Correctness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">15</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">17</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">18</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">19</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">21</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">22</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">23</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">24</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">25</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">26</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">27</td>
+<td class="org-right">1</td>
+<td class="org-left">o</td>
+</tr>
+
+<tr>
+<td class="org-right">28</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">29</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">30</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">31</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">32</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">33</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">34</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">35</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">36</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">37</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">38</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">39</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">40</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">41</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">42</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">43</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">44</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">45</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">46</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">47</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">48</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-right">49</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">50</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #4f97d7;">print</span><span style="color: #4f97d7;">(</span>data<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7;">int</span><span style="color: #4f97d7;">(</span><span style="color: #a45bad;">100</span>*<span style="color: #4f97d7;">sum</span><span style="color: #bc6ec5;">(</span>row<span style="color: #2d9574;">[</span><span style="color: #a45bad;">1</span><span style="color: #2d9574;">]</span> <span style="color: #4f97d7; font-weight: bold;">for</span> row <span style="color: #4f97d7; font-weight: bold;">in</span> data<span style="color: #bc6ec5;">)</span>/<span style="color: #4f97d7;">sum</span><span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">1</span> <span style="color: #4f97d7; font-weight: bold;">for</span> i <span style="color: #4f97d7; font-weight: bold;">in</span> data<span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+70
+
+<ul class="org-ul">
+<li>Was able to answer 70% of questions with pretty good confidence. Some were moreso guesses than knowing for certain.</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2025-08-05 Tue 03:06</p>
+<p class="date">Created: 2025-08-05 Tue 20:27</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

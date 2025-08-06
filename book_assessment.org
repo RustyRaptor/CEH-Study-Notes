@@ -1,7 +1,16 @@
+:PROPERTIES:
+:ID: ceh_book_assessment
+:END:
+#+TITLE: CEH Self Assessment Report
+
 * Book Assessment Test 1
+
+:PROPERTIES:
+:ID: book_assessment_test
+:END:
+
 ** Assessment blind answers.
 
-[[TODO: Do something]]
 
 1. B, the IP ID is an arbitrary integer that is incremented for each packet. This is how the source and destination keep track of the order of packets to recombine them at the end.
 2. C, SQL Injection tries to trick the server into executing SQL code by appending it somewhere. The "OR 1=1" is a common string used for SQL injection because it can be appended to almost anything and return true in SQL.
@@ -48,7 +57,7 @@
 | 2  | 1           |
 | 3  | 1           |
 | 4  | 1           |
-| 5  | 1           |
+| i | 1           |
 | 6  | 0           |
 | 7  | 0           |
 | 8  | 1           |
@@ -76,17 +85,265 @@
 | 30 | 0           |
 
 *** TODO Do something
+
     DEADLINE:<2025-08-06 Wed>
 
-#+BEGIN_SRC python :var data=scores_table
+#+BEGIN_SRC python :var data=scores_table :results html :exports both
+  print(data)
+  return int(100*sum(row[1] for row in data)/sum(1 for i in data))
+#+END_SRC
+
+
+#+RESULTS:
+#+begin_export html
+56
+#+end_export
+#+DESCRIPTION: Assessment of current CEH Knowlege based on book assessment on online official self-assessment
+
+* Online Official CEH Assessment Test
+
+1. Which of the following term refers to gathering and publishing personally identifiable information such as an individualâ€™s name and email address or other sensitive information of an entire organization?Doxing
+2. To compromise or to hack a system or network, the hackers go through various phases. What is the first hacking phase that hackers perform to gather information about a target before launching an attack? 
+   1. Reconaissance
+3. An IT Firm had info on its product leaked what threat did they face?
+   1. Information Leakage
+   2. Correct: Corporate Espionage
+4. Which of the following scanning technique does an attacker use to bypass firewall rules, logging mechanisms, and disguise themselves as usual network traffic?
+   1. Stealth Scanning Technique
+5. Even though IDS and firewall security controls can prevent any unauthorized network access, there are many evasion techniques used by attackers to exploit security limitations. One such technique is where the attacker changes the source IP addresses so that the attacks appear to be coming in as someone else. Identify the IDS/firewall evasion technique used by the attacker?
+   1. IP Spoofing
+6. Nmap is a free open source utility, which is designed to scan large networks rapidly. Identify the Nmap Scan method that is often referred to as a half-open scan because it does not open a full TCP connection.
+   1. Syn Stealth
+   2. Needs review
+7. Enumeration is defined as the process of extracting user names, machine names, network resources, shares, and services from a system. Which of the following enumeration does an attacker use to obtain a list of computers that belong to a domain?
+   1. Netbios enumeration
+   2. I believe netbios is the term which refers to the subdomains on a domain in a LAN network
+   3. This definitely needs review
+8. SNMP is an application layer protocol that runs on UDP and maintains and manages routers, hubs, and switches on an IP network. Which of the following SNMP command is used by the SNMP agent to inform the pre-configured SNMP manager of a specific event?
+   1. Trap
+   2. This is an intuitive answer based on how I understand event based systems. This needs review for sure.
+9. Identify the type of vulnerability assessment solutions in which the auditor selects different strategies for each machine or component of the information system?
+   1. Inference-Based Assessment
+   2. An intuitive guess based on terminology, this needs review
+   3. Correction: Tree-Based Assessment
+10. The attacker tries to gather a password database and split each password entry into 2- and 3-character long syllables; by using these character elements, a new alphabet is developed, which is then matched with the existing password database. Identify the active online attack mentioned in the above scenario?
+    1. Fingerprint attack
+    2. Guess based on naming, i have no clue about this method.
+    3. Correction: Markov-Chain Attack
+11. Identify the CPU vulnerabilities found in the design of modern processors, including chips from AMD, ARM, and Intel, caused by performance optimizations in these processors.
+    1. Spectre and Meltdown
+    2. My favorites :)
+12. Rootkits are kernel programs that can hide and cover-up traces of activities. It replaces certain operating system calls and utilities with its own modified versions of those routines. Which of the following rootkit modifies the boot sequence of the machine to load themselves instead of the original virtual machine monitor or operating system?
+    1. Boot loader level rootkit
+    2. Pretty sure this is right. Might be worth looking up.
+    3. WRONG
+    4. Correction: Hypervisor Level Rootkit
+       1. This makes sense, most modern operating systems are loaded at the hypervisor level now.
+13. Which of the following malware component is a software that protects malware from undergoing reverse engineering or analysis, and is thus hard to be detected by a security mechanism?
+    1. Obfuscator
+    2. Fairly straight forward
+    3. WRONG????
+    4. I mean, ok wtf.
+    5. Correction: Crypter???
+14. A virus is a self-replicating program that produces its own code by attaching copies of it into other executable codes. Which of the following virus evades an anti-virus software by intercepting its requests to the operating system?
+    1. Stealth/Tunneling Virus
+    2. Intuitive, maybe worth studying.
+15. Sniffer turns the NIC of a system to the promiscuous mode so that it can listen to all the data transmitted on its segment. It can constantly read all information entering the computer through the NIC by decoding the information encapsulated in the data packet. Passive sniffing is one of the types of sniffing. Passive sniffing refers to:
+    1. Sniffing through a bridge
+    2. Intuitive guess, needs some review but this makes sense to me conceptually
+    3. WRONG
+    4. Correction: Sniffing through a hub
+    5. Fair enough
+16. A firewall is a set of related programs, located at a network gateway server that protects the resources of a private network from users on other networks. A firewall examines all traffic routed between the two networks to see if it meets certain criteria. Packet filter is one of the categories of a firewall. Packet filtering firewall works at which of these layers of the OSI model?
+    1. Network Layer
+    2. Intuitive guess, definitely need to review and fully grasp the OSI model and understand how to answer these types of questions.
+17. Which of the following Trojans are used by attackers to destroy or change the entire content of a database and also attack the websites by physically changing the underlying HTML format?
+    1. Defacement trojan
+    2. We know this one for sure, but worth reviewing what a trojan actually is in this context
+18. Address Resolution Protocol (ARP) is a protocol for mapping an IP address to a physical machine address that is recognized in the local network. ARP Spoofing involves constructing a large number of forged ARP request and reply packets to overload:
+    1. Router
+    2. Intuitive guess, it makes most sense to me that the router would be the authority for ARP tables. Worth reviewing how ARP works
+    3. WRONG
+    4. Correction: Switch
+    5. Yeah that makes more sense actually. I guess I'm so used to networks without a switch so it would be a switch built into the router doing this.
+    6. Makes perfect sense
+19. You have invested millions of dollars in protecting your corporate network. You have the best IDS, firewall with strict rules, and routers with no configuration errors. Which of the following techniques practiced by an attacker to exploit human behavior and make your network vulnerable to attacks?
+    1. Social Engineering
+    2. Easy, this is an awesome question
+20. Identify the social engineering technique in which an attacker tries to call numerous random numbers within a company, claiming to be from technical support and offer service to end-users in exchange for confidential data or login credentials?
+    1. Elicitation
+    2. This is is pretty straight forward, I assume its right.
+    3. WRONG???
+    4. Correction: Quid Pro Quo
+    5. It seems some aspects of the exam will be about knowing the right jargon even if there's similar words that validly describe it.
+21. Social engineering is the art of convincing people to reveal confidential information. Which of the following social engineering techniques does not fall under the category of computer-based social engineering?
+    1. Tailgating
+    2. Tailgating is when you follow someone closely to get through a physical door. Must be this one.
+    3. Good to review social engineering techniques
+22. Denial of Service (DoS) is an attack on a computer or network that prevents legitimate use of its resources. In a DoS attack, attackers flood a victim system with non-legitimate service requests or traffic to overload its resources, which prevents it from performing intended tasks. Which of the following is a symptom of a DoS attack?
+    1. Unavailability of a particular website.
+    2. duh
+23. What port does NTP use?
+    1. UDP 123
+    2. I mean, this is just something you can google search. I guess just make it a point to memorize the common ports of common services.
+24. Identify the attacks in which DDoS vulnerabilities do not have patches or effective defensive mechanisms, and until the victim identifies the threat actors attack strategy and deploys a patch for the exploited DDoS vulnerability, the attacker actively blocks all the victimÃ¢€™s resources and steals the victimÃ¢€™s data?
+    1. Zero-Day DDoS Attack
+    2. I am pretty sure, weirdly specific question.
+25. In which of the following attacks does an attacker send partial HTTP requests to the target webserver to exhaust the target server\u2019s maximum concurrent connection pool, and as a result, additional connection attempts are denied?
+    1. Slowloris attack
+    2. Had to look it up, but I vaguely remembered it. Worth reviewing types of attacks. Common theme here.
+26. Identify the hijacking technique in which the attacker injects the malicious data in the TCP session, even if the source-routing is disabled, and can send the data even if there is no access to see the response?
+    1. Blind highjacking
+    2. Intuitive guess, no clue about these. Review types of network highjacking.
+27. An intrusion detection system (IDS) is a security software or hardware that inspects all network traffic for suspicious patterns that may indicate a network or system security breach. Identify the alert raised by an IDS when no attack has taken place?
+    1. False Positive
+    2. DUHH
+28. An intrusion detection system (IDS) gathers and analyzes information from within a computer or a network to identify the possible violations of security policy, including unauthorized access and misuse. Attackers use various IDS evasion techniques to bypass intrusion detection mechanisms. Which of the following evasion techniques rely on Time-to-Live (TTL) fields of a TCP/IP packet?
+    1. Insertion Attack
+    2. Intuitive guess, worth studying how this works exactly and what TTL actually does.
+    3. My understanding is TTL limits the time in which a packet is respected. Meaning if we insert packets we could exploit the TTL.
+    4. Study this
+29. Firewalls are categorized into two types, namely, hardware firewall and software firewall. Identify the correct statement for a software firewall.
+    1. placed between the normal application and networking components of the OS
+    2. This is a tough one. Need to study firewall terminology.
+30. A honeypot is an information system resource set up to attract and trap people who attempt to penetrate an organization\u2019s network. Which of the following type of honeypots emulate the real production network of a target organization?
+    1. High-interaction honeypot
+    2. Intuitive guess, this needs to be studied
+31. In which of the following IDS evasion techniques does an attacker split the attack traffic into many packets, such that no single packet triggers the IDS?
+    1. Session Splicing
+    2. Intuitive name guess
+32. Metasploit Framework is an exploit development platform that supports fully automated exploitation of web servers. Which of the following Metasploit modules is used to perform arbitrary, one-off actions such as port scanning, denial of service, and fuzzing?
+    1. Metasploit Auxillary module
+    2. Just an intuitive guess, should review metasploit
+33. Identify the web application attack where the attacker injects carriage return ( ) and line feed ( ) characters into the users input to trick the web server, web application, or user into believing that the current object is terminated and a new object has been initiated?
+    1. CRLF Injection
+    2. iirc CRLF refers to these types of terminator characters, intuitive guess anyway.
+34. Identify the web application attack where attackers exploit webpage vulnerabilities to force an unsuspecting users browser to send malicious requests they did not intend. The victim holds an active session with a trusted site and simultaneously visits a malicious site, which injects an HTTP request for the trusted site into the victim users session, compromising its integrity.
+    1. Intuitive guess based on secondary knowlege of what this is.
+35. Jason, a penetration tester, is testing a web application that he knows is vulnerable to an SQL injection, but the results of the injection are not visible to him. He tried waitfor delay command to check the SQL execution status, which confirmed the presence of the SQL injection vulnerability. Which type of SQL injection is Jason attempting on the web application?
+    1. Blind SQL Injection
+    2. Just means we are infering a vulnerability by observing server response behavior so in a sense it is blind.
+36. Identify the application security testing method where the entire system architecture, including its source code or application/software to be tested, is already known to the tester?
+    1. Static Application Security Testing
+    2. Intuitive guess, pretty sure that's right. It just means they are using static analysis on the code and architecture to find vulnerabilities.
+37. SQL injection attacks use a series of malicious SQL queries or SQL statements to manipulate the database directly. In which SQL injection attack does an attacker deface a web page, insert malicious content into web pages, or alter the contents of a database?
+    1. Compromised data integrity
+    2. Not sure about this one
+38. In which of the following SQL injection attacks does an attacker bypass user authentication by using a conditional OR clause in such a way that the condition of the WHERE clause will always be true?
+    1. Tautology
+    2. That is such a cool name
+39. Which SQL injection testing technique is used to discover coding errors by inputting a massive amount of random data and observing the changes in the output and security loopholes in web applications?
+    1. Fuzzing Testing
+    2. Not just for SQL injection. I noticed some terms apply to many different subjects
+40. Which of the following Wi-Fi chalking methods refer to drawing symbols in public places to advertise open Wi-Fi networks?
+    1. Warchalking
+    2. This is similar to Wardriving where people drive around neighborhoods and create a database of wifi networks and their locations even without joining them.
+41. Which wireless standard has bandwidth up to 54 Mbps and signals in a regulated frequency spectrum around 5 GHz?
+    1. 802.11b??
+    2. I have no clue, I will need to study this topic heavily
+    3. WRONG
+    4. Correction: 802.11a
+42. Bluetooth hacking refers to the exploitation of Bluetooth stack implementation vulnerabilities to compromise sensitive data in Bluetooth-enabled devices and networks. Which of the following Bluetooth attack refers to sending unsolicited messages over Bluetooth to Bluetooth-enabled devices such as PDA and mobile phones?
+    1. Blue Snarfing
+    2. No clue, similar question in the book assessment. Need to study bluetooth attacks
+    3. WRONG
+    4. Correction: Blue Snarfing
+43. In which of the following attack does an attacker install a virtual communication tower between the two authentic endpoints, intending to mislead the victim?
+    1. Wormhole Attack
+    2. Just a silly guess, I have to study a lot on wireless attack types
+    3. WRONG:
+    4. Correction: aLTEr Attack
+44. IoT is a network of devices with an IP address that has the capability of sensing, collecting, and sending data using embedded sensors. Identify the layer in IoT architecture that helps to bridge the gap between two endpoints, such as a device and a client, and also carries out message routing, message identification, and subscribing?
+    1. Access Gateway Layer
+    2. Just a guess, it's jargon, will read up on IOT architecture terms.
+45. Identify the IoT attack, in which an attacker uses multiple forged identities to create a strong illusion of traffic congestion, affecting communication between neighboring nodes and networks?
+    1. Side-Channel Attack?
+    2. No freaking idea
+46. Which of the following cloud attacks is performed during the translation of the SOAP message in the TLS layer where attackers duplicate the body of the message and send it to the server as a legitimate user?
+    1. Wrapping attack
+    2. No freaking idea, but its intuitive name
+47. Docker is open-source software that can be installed on any host to build, deploy, and run containerized applications on a single operating system Which of the following Docker native network drivers is used to create a network connection between the container interfaces and its parent host interface?
+    1. Bridge
+    2. I guess depends on what we mean by "create a network connection" not sure.
+    3. Good idea to review
+48. Code-breaking techniques help measure the encryption strength. Which of the following code-breaking techniques requires a high level of mathematical and cryptographic skills and involves the use of social engineering techniques to extract cryptography keys?
+    1. Frequency Analysis
+    2. Yeah, that sounds a lot like frequency analysis. Worth reviewing.
+49. Identify the encryption technique where data is encrypted by a sequence of photons that have a spinning trait while traveling from one end to another end?
+    1. Quantim Cryptography
+    2. Pretty sure, but I should review this. Also could be hardware-based rather.
+50. Which of the following cryptographic attack refers to the extraction of cryptographic secrets (e.g., the password to an encrypted file) from a person by coercion or torture?
+    1. Rubber Hose Attack
+    2. Well I knew what it is but didn't know this is what it's called. That's pretty funny.
+
+
+
+
+** Scoring
+#+TBLNAME: official_scores
+| #  | Correctness |
+|----|-------------|
+| 1  | 1           |
+| 2  | 1           |
+| 3  | 0           |
+| 4  | 1           |
+| 5  | 1           |
+| 6  | 1           |
+| 7  | 1           |
+| 8  | 1           |
+| 9  | 0           |
+| 10 | 0           |
+| 11 | 1           |
+| 12 | 0           |
+| 13 | 0           |
+| 14 | 1           |
+| 15 | 0           |
+| 16 | 1           |
+| 17 | 1           |
+| 18 | 0           |
+| 19 | 1           |
+| 20 | 0           |
+| 21 | 1           |
+| 22 | 1           |
+| 23 | 1           |
+| 24 | 1           |
+| 25 | 1           |
+| 26 | 1           |
+| 27 | 1           |o
+| 28 | 1           |
+| 29 | 1           |
+| 30 | 0           |
+| 31 | 1           |
+| 32 | 1           |
+| 33 | 1           |
+| 34 | 1           |
+| 35 | 1           |
+| 36 | 1           |
+| 37 | 1           |
+| 38 | 1           |
+| 39 | 1           |
+| 40 | 1           |
+| 41 | 0           |
+| 42 | 0           |
+| 43 | 0           |
+| 44 | 1           |
+| 45 | 0           |
+| 46 | 1           |
+| 47 | 0           |
+| 48 | 0           |
+| 49 | 1           |
+| 50 | 1           |
+
+#+BEGIN_SRC python :var data=official_scores :results html :exports both
   print(data)
   return int(100*sum(row[1] for row in data)/sum(1 for i in data))
 #+END_SRC
 
 #+RESULTS:
-: 56
+#+begin_export html
+70
+#+end_export
 
+- Was able to answer 70% of questions with pretty good confidence. Some were moreso guesses than knowing for certain.
 
-#+TITLE: CEH Self Assessment Report
-#+DESCRIPTION: Assessment of current CEH Knowlege based on book assessment on online official self-assessment
 
