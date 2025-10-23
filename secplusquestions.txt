@@ -73,4 +73,19 @@ A company’s web filter is configured to scan the URL for strings and deny acce
 B
 B
 N
-Which of the following answers can be used to describe technical security controls? (Select 3 answers) 
+Match the descriptions
+Vishing On-path Keylogger DDoS Keylogger
+Vishing Injection On-path DDoS Keylogger
+Y Review the definitions of different attack types
+The security team at a manufacturing company is creating a set of security standards for employees and visitors. Select the BEST security control for each location.
+Fencing Security Guard|Access Badge Access control vestibule|Access Badge Biometrics|Authentication token
+Fencing lighting|Security guard Access control vestibule|Access badge Biometrics|Authentication token
+Y Intuition is decent but a review of exam objectives for physical security and best practices will help
+Select the most appropriate security category. Some categories may be used more than once.
+Physical Managerial Operational Physical Technical
+Operational Managerial Physical Physical Technical
+Y Review the definitions of security categories and understand the philosophy
+Match the appropriate authentication factor to each description.
+Something you have Something you know Something you are Somewhere you are
+Something you have Something you know Something you are Somewhere you are
+N
